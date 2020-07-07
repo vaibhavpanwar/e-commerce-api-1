@@ -107,7 +107,7 @@ router.get("/:id", async (req, res) => {
 });
 
 // @route     PUT api/categories/products/:category_id/:product_id
-// @desc      Update contact
+// @desc      Update product
 // @access    Private
 router.put("/:c_id/:p_id", auth, async (req, res) => {
   if (req.user.isAdmin === true) {
